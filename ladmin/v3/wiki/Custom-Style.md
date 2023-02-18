@@ -15,18 +15,6 @@ $primary:       green;
 . . .
 ```
 
-And rebuild the mix assets.
-```bash
-// in Modules/Ladmin
-
-$ npm run dev
-
-// ---- OR-----
-
-$ npm run prod
-
-```
-
 ![Green Dashboard](https://github.com/hexters/assets/blob/main/ladmin/v2/captures/green-dashboard.png?raw=true)
 
 You can also add some feature by add other package, for example adding `vue`, `Laravel Echo`, etc.

@@ -1,67 +1,41 @@
+**[L-Admin](https://github.com/hexters/ladmin)** is a Laravel administration package that allows web developers to quickly create an admin panel for their website. The package includes features such as user management, access control management, task management, file management, email management, and many more. The package is designed to save time and effort in building an admin panel and allows developers to focus on building the core features of their web application.
+
 # 🚀 Quickstart
 
 Follow the steps below to get started faster! Add the repository by running the command below.
 
 ```bash
-$ composer require hexters/ladmin
+composer require hexters/ladmin
 ```
 
-Follow the installation with the `--with-admin-table` option.
-```
-$ php artisan ladmin:install --with-admin-table
+Follow the installation to start build awesome apps.
+```bash
+php artisan ladmin:install --and=ladmin:setup
 ```
 
 Run migrate and seed, to install ladmin database tables
 ```bash
-$ php artisan migrate --seed
-```
-
-And run seeder ladmin module, to assign role and permission to existing user.
-```bash
-$ php artisan module:seed Ladmin
+php artisan migrate --seed
 ```
 
 Installation is complete, please access `http://localhost:8000/administrator`
 
-![Login Page](https://github.com/hexters/assets/blob/main/ladmin/v2/captures/login-page.png?raw=true)
+![Login Page](https://raw.githubusercontent.com/hexters/assets/main/ladmin/v3/captures/login-page.png)
 
-# 🧰 Manual Installation
 
-If you want to use the `App\Models\User` model class as a login account, then follow the steps below.
+# Customization Color and Assets
 
-Use `\Hexters\Ladmin\LadminAccount` into model `\App\Modules\User` see the example.
-```php
-. . .
-use Hexters\Ladmin\LadminAccount;
+To change the ladmin style, you just need to run `Vite`, before that you should install nodejs modules in `Modules/Ladmin` folder. Follow this steps below.
 
-class User extends Authenticatable {
-
-  use HasApiTokens, HasFactory, Notifiable, LadminAccount;
-
-  . . .
-```
-
-Open file `\Database\Seeders\DatabaseSeeder`, add the code below or you can create your own seeder file.
-```php
-
-\App\Models\User::factory(10)->create();
-
-```
-
-Follow the installation below.
-
-```
-$ php artisan ladmin:install
-```
-
-Run migrate and seed, to install ladmin database tables
 ```bash
-$ php artisan migrate --seed
-```
 
-And run seeder ladmin module, to assign role and permission to existing user.
-```bash
-$ php artisan module:seed Ladmin
-```
+// Install node modules 
 
-And please access `http://localhost:8000/administrator`
+cd Modules/Ladmin && npm install
+
+// Go back to directory root project and run vitejs
+
+npm run dev
+
+```
+You can start changing javascript and css.

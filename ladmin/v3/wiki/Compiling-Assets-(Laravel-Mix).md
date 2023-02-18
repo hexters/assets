@@ -1,4 +1,4 @@
-When you create a new module it also create assets for CSS/JS and the `webpack.mix.js` configuration file.
+Now L-Admin is supported with ViteJs and no longer uses Laravel Mix. You only need to install the Node.js module in your module directory and then run ViteJs as usual.
 
 Change directory to the module path:
 
@@ -11,23 +11,31 @@ The default `package.json` file includes everything you need to get started. You
 $ npm install
 ```
 
-# Running Mix
+# Running ViteJs
 
-Mix is a configuration layer on top of Webpack, so to run your Mix tasks you only need to execute one of the NPM scripts that is included with the default **Ladmin** `package.json` file
+To run ViteJs you only need to execute one of the NPM scripts that is included with the default **Ladmin** `package.json` file
 
 ```bash
-// Run all Mix tasks...
+// Run ViteJs
 $ npm run dev
 
-// Run all Mix tasks and minify output...
-$ npm run production
+// Run all ViteJs and minify output...
+$ npm run build
 ```
 
-After generating the versioned file, you won't know the exact file name. So, you should use Laravel's global mix function within your views to load the appropriately hashed asset. The mix function will automatically determine the current name of the hashed file:
+After the asset version is created, you need to call it in the layout file that you have provided previously by:
 ```html
-<link rel="stylesheet" href="{{ mix('css/blog.css') }}">
+<head>
+    . . . 
 
-<script src="{{ mix('js/blog.js') }}"></script>
+    @vite([
+        'Modules/Blog/Resources/js/blog.js',
+        'Modules/Blog/Resources/css/blog.css'
+    ])
+    
+    . . . 
+</head>
+
 ```
 
-For more info on Laravel Mix view the documentation here: [https://laravel.com/docs/mix](https://laravel.com/docs/mix)
+For more info on Asset Bundling (Vite) view the documentation here: [https://laravel.com/docs/master/vite](https://laravel.com/docs/10.x/vite)
