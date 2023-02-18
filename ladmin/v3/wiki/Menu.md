@@ -1,6 +1,6 @@
 See the following example to create new menu.
 ```bash
-$ php artisan module:make-menu PostMenu --module=Blog
+php artisan module:make-menu PostMenu --module=Blog
 ```
 
 If it was created successfully then a new component's file will be saved as `Modules/Blog/Menus/PostMenu.php` then add the menu that was created to `Sidebar` class in `App/Menu/Sidebar.php`
@@ -30,11 +30,11 @@ For example, we will create a submenu on the menu class `Modules\Blog\Menus\Post
 
 Create article submenu
 ```bash
-$ php artisan module:make-menu ArticleMenu --module=Blog
+php artisan module:make-menu ArticleMenu --module=Blog
 ```
 Creare comment submenu
 ```bash
-$ php artisan module:make-menu CommentMenu --module=Blog
+php artisan module:make-menu CommentMenu --module=Blog
 ```
 
 Register in the `Modules\Blog\Menus\PostMenu` class, see the example below.

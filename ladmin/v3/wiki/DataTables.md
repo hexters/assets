@@ -1,6 +1,6 @@
 See an example below to create a new datatable.
 ```bash
-$ php artisan module:make-datatable ArticleDatatables --module=Blog
+php artisan module:make-datatable ArticleDatatables --module=Blog
 ```
 
 **Ladmin Pakcage** use [Laravel DataTables](https://yajrabox.com/docs/laravel-datatables/master) package from [**Yajra**](https://yajrabox.com/) for further information [click here &rarr;](https://yajrabox.com/docs/laravel-datatables/master)
@@ -176,7 +176,7 @@ You can add a button or anything to the right of the page's title, see example b
 public function button()
 {
     return Blade::render(
-        '<a href="' . route('ladmin.article.create') . '" class="btn btn-primary">+ Add New</a>'
+        '<a href="' . route('ladmin.blog.article.create') . '" class="btn btn-primary">+ Add New</a>'
     );
 }
 

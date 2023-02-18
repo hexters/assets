@@ -1,6 +1,6 @@
 Let's start by creating a model
 ```bash
-$ php artisan module:make-model Article --module=Blog
+php artisan module:make-model Article --module=Blog
 ```
 
 After successfully creating the model, the file will be saved as `Modules/Blog/Models/Article.php` folder, see the sample contents below.

@@ -3,7 +3,7 @@ This package is inspired by [nwidart/laravel-modules](https://github.com/nWidart
 ### Create Module
 Create new module
 ```bash
-$ php artisan module:make Blog
+php artisan module:make Blog
 ```
 
 You can directly access the admin page via the link below.
@@ -68,14 +68,14 @@ After the module is created, you need to create a menu and register it in the si
 
 To create a menu class, click the link beside to see how to register the menu . [Menu Documentation](https://github.com/hexters/ladmin/wiki/Menu)
 ```bash
-$ php artisan module:make-menu PostMenu --module=Blog
+php artisan module:make-menu PostMenu --module=Blog
 ```
 
 ### Create DataTables
 Create a DataTables class, For more information Click the link beside. [DataTables Documentation](https://github.com/hexters/ladmin/wiki/DataTables)
 
 ```bash
-$ php artisan module:make-datatable PostDatatables --module=Blog
+php artisan module:make-datatable PostDatatables --module=Blog
 ```
 
 # Artisan
@@ -84,22 +84,22 @@ In addition to the commands above, there are several commands that can be used t
 
 ### Create Model class
 ```bash
-$ php artisan module:make-model Article --module=Blog
+php artisan module:make-model Article --module=Blog
 ```
 
 ### Create Controller class
 ```bash
-$ php artisan module:make-controller ArticleController --module=Blog
+php artisan module:make-controller ArticleController --module=Blog
 ```
 
 ### Create casting class
 ```bash
-$ php artisan module:make-cast BlogCast --module=Blog
+php artisan module:make-cast BlogCast --module=Blog
 ```
 
 ### Create channel class
 ```bash
-$ php artisan module:make-channel BlogChannel --module=Blog
+php artisan module:make-channel BlogChannel --module=Blog
 ```
 
 ### Create Command class
@@ -107,7 +107,7 @@ $ php artisan module:make-channel BlogChannel --module=Blog
 For more information click the link beside. [Command Documentation](https://github.com/hexters/ladmin/wiki/Command)
 
 ```
-$ php artisan module:make-command BlogCommand --module=Blog
+php artisan module:make-command BlogCommand --module=Blog
 ```
 
 ### Create component class
@@ -115,97 +115,97 @@ $ php artisan module:make-command BlogCommand --module=Blog
 For more information click the link beside. [Component Documentation](https://github.com/hexters/ladmin/wiki/Component-View)
 
 ```bash
-$ php artisan module:make-component BlogComponent --module=Blog
+php artisan module:make-component BlogComponent --module=Blog
 ```
 
 ### Create Event class
 ```bash
-$ php artisan module:make-event BlogEvent --module=Blog
+php artisan module:make-event BlogEvent --module=Blog
 ```
 
 ### Create Exception class
 ```bash
-$ php artisan module:make-exception BlogException --module=Blog
+php artisan module:make-exception BlogException --module=Blog
 ```
 
 ### Create Factory class
 ```bash
-$ php artisan module:make-factory BlogFactory --module=Blog
+php artisan module:make-factory BlogFactory --module=Blog
 ```
 
 ### Create job class
 ```bash
-$ php artisan module:make-job BlogJob --module=Blog
+php artisan module:make-job BlogJob --module=Blog
 ```
 
 ### Create Listener class
 ```bash
-$ php artisan module:make-listener BlogListener --module=Blog
+php artisan module:make-listener BlogListener --module=Blog
 ```
 
 ### Create email class
 ```bash
-$ php artisan module:make-mail BlogMail --module=Blog
+php artisan module:make-mail BlogMail --module=Blog
 ```
 
 ### Create middleware class
 ```bash
-$ php artisan module:make-middleware BlogMiddleware --module=Blog
+php artisan module:make-middleware BlogMiddleware --module=Blog
 ```
 
 ### Create miggration class
 ```bash
-$ php artisan module:make-migration BlogMigration --module=Blog
+php artisan module:make-migration BlogMigration --module=Blog
 ```
 
 ### Create notificaiton class
 ```bash
-$ php artisan module:make-notification BlogNotification --module=Blog
+php artisan module:make-notification BlogNotification --module=Blog
 ```
 
 ### Create Observer class
 ```bash
-$ php artisan module:make-observer BlogObserver --module=Blog
+php artisan module:make-observer BlogObserver --module=Blog
 ```
 
 ### Create Policy class
 ```bash
-$ php artisan module:make-policy BlogPolicy --module=Blog
+php artisan module:make-policy BlogPolicy --module=Blog
 ```
 
 ### Create service provider class
 ```bash
-$ php artisan module:make-provider BlogProvider --module=Blog
+php artisan module:make-provider BlogProvider --module=Blog
 ```
 
 ### Create request class
 ```bash
-$ php artisan module:make-request BlogRequest --module=Blog
+php artisan module:make-request BlogRequest --module=Blog
 ```
 
 ### Create resource class
 ```bash
-$ php artisan module:make-resource BlogResource --module=Blog
+php artisan module:make-resource BlogResource --module=Blog
 ```
 
 ### Create rule class
 ```bash
-$ php artisan module:make-rule BlogRule --module=Blog
+php artisan module:make-rule BlogRule --module=Blog
 ```
 
 ### Create scope class
 ```bash
-$ php artisan module:make-scope BlogScope --module=Blog
+php artisan module:make-scope BlogScope --module=Blog
 ```
 ### Create Searchable class
 For more information click the link beside. [Component Documentation](https://github.com/hexters/ladmin/wiki/Global-Search)
 ```bash
-$ php artisan module:make-search ArticleSearch --module=Blog
+php artisan module:make-search ArticleSearch --module=Blog
 ```
 
 ### Create seeder class
 ```bash
-$ php artisan module:make-seeder BlogSeeder --module=Blog
+php artisan module:make-seeder BlogSeeder --module=Blog
 ```
 
 ### Execute seeder class
@@ -213,13 +213,13 @@ $ php artisan module:make-seeder BlogSeeder --module=Blog
 Seed the given module, or without an argument, seed all modules
 
 ```bash
-$ php artisan module:seed Blog
+php artisan module:seed Blog
 ```
 ### Publish your module
 
 For more information click the link beside. [Publish Documentation](https://github.com/hexters/ladmin/wiki/Make-Money)
 ```bash
-$ php artisan ladmin:publish Blog
+php artisan ladmin:publish Blog
 ```
 
 
@@ -229,12 +229,12 @@ You can also use options like those in laravel, for example.
 
 Example of options on class model generation
 ```bash
-$ php artisan module:make-model Article -m --module=Blog
+php artisan module:make-model Article -m --module=Blog
 ```
 
 Example of options on controller class creation
 ```bash
-$ php artisan module:make-controller PostController --invokable --module=Blog
+php artisan module:make-controller PostController --invokable --module=Blog
 ```
 
 And there are many other options.

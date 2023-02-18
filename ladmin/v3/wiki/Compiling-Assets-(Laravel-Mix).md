@@ -3,7 +3,7 @@ Now L-Admin is supported with ViteJs and no longer uses Laravel Mix. You only ne
 Change directory to the module path:
 
 ```bash
-$ cd Modules/Blog
+cd Modules/Blog
 ```
 
 The default `package.json` file includes everything you need to get started. You may install the dependencies it references by running:

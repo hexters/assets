@@ -1,6 +1,6 @@
 This is how to create a new component.
 ```bash
-$ php artisan module:make-component Card --module=Blog
+php artisan module:make-component Card --module=Blog
 ```
 
 If it was created successfully then a new component's file will be saved as `Modules/Blog/View/Components/Card.php`, after that please add this component to service provider by open `\Modules\Blog\Providers\BlogServiceProvider` and see the example below.

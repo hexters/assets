@@ -2,7 +2,7 @@
 
 Let's start by creating a new class named `ArticleSearch`
 ```bash
-$ php artisan module:make-search ArticleSearch --module=Blog
+php artisan module:make-search ArticleSearch --module=Blog
 ```
 
 Then the class will be saved as `Modules/Blog/Searches/ArticleSearch.php`, then `extends` the class into model class `Modules\Blog\Models\Article`, see example below.

@@ -3,7 +3,7 @@ You can sell the modules that you have created on several PHP Software sales pro
 Start by publishing the module that has been created by running the command below.
 
 ```bash
-$ php artisan module:publish Blog
+php artisan module:publish Blog
 ```
 > **Note:** before publishing a module, you should first delete the `node_modules` folder if it exists.
 
@@ -12,7 +12,7 @@ You are asked to fill in some information for the package to be created, such as
 If all the information has been filled in, the package will be created and stored in the `ladmin-packages/` folder. If there is a package that you need, just go to the folder you created, see the example below.
 
 ```bash
-$ cd ladmin-packages/hexters/blog
+cd ladmin-packages/hexters/blog
 
 // ------ AND THEN ------
 
