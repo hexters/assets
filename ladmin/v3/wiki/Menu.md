@@ -74,9 +74,9 @@ class PostMenu extends BaseMenu
     protected function submenus()
     {
         return [
-            Article::class, #<-- tambahkan menu di sini
+            Article::class, #<-- add Menus class here
 
-            CommentMenu::class, #<-- tambahkan menu di sini
+            CommentMenu::class, #<-- add Menus class here
         ];
     }
 
@@ -96,11 +96,11 @@ We recommend you to not use icons for submenus.
 
 Assign permission at role `Super Admin` before that
 
-![Assing](https://github.com/hexters/assets/blob/main/ladmin/v2/captures/assign-submenu-permission.png?raw=true)
+![Assing](https://raw.githubusercontent.com/hexters/assets/main/ladmin/v3/captures/menu-permission.png)
 
 Result after assign permission
 
-![Submenu](https://github.com/hexters/assets/blob/main/ladmin/v2/captures/submenu.png?raw=true)
+![Submenu](https://raw.githubusercontent.com/hexters/assets/main/ladmin/v3/captures/sub-menus.png)
 
 # Route Menu & Link Url
 
@@ -291,7 +291,7 @@ Call the javascript function below.
 Ladmin.addMenuBadge('menu-account', 4)
 ```
 
-![Menu Badge](https://github.com/hexters/assets/blob/main/ladmin/v2/captures/menu-badge.png?raw=true)
+![Menu Badge](https://raw.githubusercontent.com/hexters/assets/main/ladmin/v3/captures/badge.png)
 
 # Menu Divider
 
@@ -299,7 +299,7 @@ You can give a separator on the sidebar menu by implementing the `\Hexters\Ladmi
 
 ### Divider Line
 
-![Line Divider](https://github.com/hexters/assets/blob/main/ladmin/v2/captures/divider-line.png?raw=true)
+![Line Divider](https://raw.githubusercontent.com/hexters/assets/main/ladmin/v3/captures/divider-line.png)
 
 To create a border in the form of a line, you just simply make the name `null` or empty.
 
@@ -330,7 +330,7 @@ class BlogDivider extends BaseMenu implements MenuDivider
 
 ## Divider With Title
 
-![Title Divider](https://github.com/hexters/assets/blob/main/ladmin/v2/captures/divider-text.png?raw=true)
+![Title Divider](https://raw.githubusercontent.com/hexters/assets/main/ladmin/v3/captures/divider-name.png)
 
 Otherwise if you want to create a menu delimiter with a title, fill in the property `$name`
 
