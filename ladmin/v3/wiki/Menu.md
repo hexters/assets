@@ -28,9 +28,6 @@ To create a submenu you just need to create a menu class as above, and register 
 
 For example, we will create a submenu on the menu class `Modules\Blog\Menus\PostMenu`, create a menu class first.
 
-Create article submenu
-```bash
-php artisan module:make-menu ArticleMenu --module=Blog
 ```
 Creare comment submenu
 ```bash
@@ -48,7 +45,7 @@ use Hexters\Ladmin\Menus\Gate;
 use Hexters\Ladmin\Supports\BaseMenu;
 
 use Modules\Blog\Menus\CommentMenu;
-use Modules\Blog\Menus\ArticleMenu;
+use Modules\Blog\Menus\Article;
 
 class PostMenu extends BaseMenu
 {
@@ -77,7 +74,7 @@ class PostMenu extends BaseMenu
     protected function submenus()
     {
         return [
-            ArticleMenu::class, #<-- tambahkan menu di sini
+            Article::class, #<-- tambahkan menu di sini
 
             CommentMenu::class, #<-- tambahkan menu di sini
         ];

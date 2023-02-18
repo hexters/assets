@@ -1,4 +1,4 @@
-![](https://github.com/hexters/assets/blob/main/ladmin/v2/captures/global-search.png?raw=true)
+![](https://raw.githubusercontent.com/hexters/assets/main/ladmin/v3/captures/search.png)
 
 Let's start by creating a new class named `ArticleSearch`
 ```bash
