@@ -61,7 +61,7 @@ public function index()
 
 Woala... And the result will be shown here
 
-![List of Article](https://github.com/hexters/assets/blob/main/ladmin/v2/captures/list-of-article.png?raw=true)
+![List of Article](https://raw.githubusercontent.com/hexters/assets/main/ladmin/v3/captures/list-0f-article.png)
 
 # Custom View
 
