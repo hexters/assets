@@ -52,15 +52,12 @@ Modules/
                 |--- app.css
             |--- js/
                 |--- app.js
-            |--- sass/
-                |--- app.scss
             |--- views/
         |--- routes/
             |--- api.php
             |--- web.php
         |--- app.json
         |--- package.json
-        |--- webpack.mix.js
 ```
 
 ### Create Menu

@@ -204,7 +204,7 @@ public function button()
 
 And the result will be shown here.
 
-![Datatable Button](https://github.com/hexters/assets/blob/main/ladmin/v2/captures/datatable-button.png?raw=true)
+![Datatable Button](https://raw.githubusercontent.com/hexters/assets/main/ladmin/v3/captures/article-button-create.png)
 
 # Multiple DataTables
 
